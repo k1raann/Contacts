@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    {% include "index.html"%}
+    <form method = "POST">
+        {{form.first_name.label(class_ = "form-label")}}{{form.first_name(class_="form-control")}}<br>
+        {{form.last_name.label(class_ = "form-label")}}{{form.last_name(class_="form-control")}}<br>
+        {{form.place.label(class_ = "form-label")}}{{form.place(class_="form-control")}}<br>
+        {{form.submit(class_="btn btn-primary")}}<br>
+    </form>
+</body>
+</html>
